@@ -1,0 +1,172 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+p{
+	margin-top: 5px;
+	font-size: 18px;
+	text-align: center;
+	font-family: Gabriola;
+}
+h3{
+	border: 0.5rem ;
+	border-color: white;
+	border-style:solid;
+	color:  #555555;
+	text-align: center;
+	font-family: Gabriola;
+}
+
+.imp{
+	text-align: center;
+	color: #7A4988;
+	font-family: Gabriola;
+	font-size: 60px;
+}
+.inp{
+	text-align: center;
+	color: #BE93D4;
+	font-family: Gabriola;
+	font-size: 40px;
+}
+.container, .book-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container{
+	width: 100%;
+	height: 100vh;
+	background: url('https://i.pinimg.com/originals/5f/cf/cb/5fcfcb3dbd6ae7ba8ef0be13865f726a.gif') ;
+}
+.book-content{
+	width: 30%;
+	min-width: 250px;
+	max-width: 300px;
+	height: 330px;
+	position: relative;
+	perspective: 1000px;
+	transition: 1s;
+}
+.book{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+	transform-style: preserve-3d;
+	transform-origin: left; 
+}
+.face-front, .face-back{
+	width: 100%;
+	height: 100%;
+	background: url('https://i.pinimg.com/564x/72/23/4a/72234a18b250a1e7b4c076f062a5eaed.jpg');
+	background-size: cover;
+	padding: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.bod2{
+	border: 0.5rem ;
+	border-color: white;
+	border-style: solid;
+	width: 230px;
+	height: 200px;
+	margin-left: 10px;
+	
+}
+.bod22{
+	border: 0.5rem ;
+	border-color: white;
+	border-style: solid;
+	width: 260px;
+	height: 290px;
+	margin-left: -5px;
+	margin-top: -20px;
+	
+}
+.book .face-back .icn1{
+	width: 190px;
+	margin-top: 80px;
+	margin-left: 40px;
+	position: absolute;
+}
+.book .face-back .icn2{
+	width: 190px;
+	margin-top: 40px;
+	margin-left: 40px;
+	position: absolute;
+}
+.book .face-back .icn3{
+	width: 210px;
+	margin-top: 40px;
+	margin-left: 35px;
+	position: absolute;
+}
+.face-front{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.book .face-front img{
+	width: 90px;
+	margin-top: 20px;
+	margin-left: 180px;
+	position: absolute;
+}
+.book .face-front .edi{
+	width: 80px;
+	margin-top: -100px;
+	margin-left: 200px;
+	position: absolute;
+}
+.book .face-front .img22{
+	width: 120px;
+	margin-top: -100px;
+	margin-left: 170px;
+	position: absolute;
+}
+.face-back{
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateZ(-1px) rotateY(180deg);
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#portada{
+	background: url('https://i.pinimg.com/564x/a6/26/a1/a626a1f7bb2bffe3398958e15041f63b.jpg');
+		
+
+}
+#portada img{
+	width: 50px;
+	height: 40px;
+	margin-top: 227px;
+	margin-left: -10px;
+	position: absolute;
+}
+#portada-back{
+	background: #BE93D4;
+}
+#portada, #portada-back{
+	background-size: 100% 100%;
+}
+
+.trnsf{
+	transform: translateX(80px);
+}
+.trnsf-reset{
+	transform: translateX(0px);
+}
+
+
+
+@media screen and (max-width: 800px){
+	p{
+		font-size: 12px;
+	}
+}
+
+
+
